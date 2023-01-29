@@ -4,7 +4,7 @@
 ## Wait, what?
 
 Specifically, this repo:
-- contains a minimal .NET API
+- contains a [.NET Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-7.0)
 - features a swagger page acting as a simple UI
 - demonstrates a rudimentary Roshambo (rock/paper/scissors) game
 - accepts extensible rule sets
