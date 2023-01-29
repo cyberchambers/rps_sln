@@ -46,17 +46,17 @@ rps_app.MapPost("/throw/{rules}&{playername}&{playerthrow}", async (string rules
     int index = rand.Next(rules_dict.Count);
     var rule = rules_dict.ElementAt(index);
     rpsmatch.AppThrow = rule.Key;
-    string losesto = rule.Value;
-    string appthrow = rpsmatch.AppThrow;
+    string losesto = rule.Value.ToLower();
+    string appthrow = rpsmatch.AppThrow.ToLower();
     rpsmatch.PlayerName = playername;
     rpsmatch.PlayerThrow = playerthrow;
 
     //evaluate the contest
-    if (losesto.Contains(playerthrow))
+    if (losesto.Contains(playerthrow.ToLower()))
     {
         rpsmatch.Winner = rpsmatch.PlayerName;
     }
-    else if (playerthrow == appthrow)
+    else if (playerthrow.ToLower() == appthrow)
     {
         rpsmatch.Winner = "Draw";
     }
