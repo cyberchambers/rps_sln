@@ -29,4 +29,4 @@ The swagger UI is reletively self-explanitory. Nonetheless, here are some highli
 
 If you want to play [Rock/Paper/Scissors/Spock/Lizard](http://www.samkass.com/theories/RPSSL.html) use the following rules:
 
-`code`
+`{"rock":"paper, Spock","paper": "scissors, lizard","scissors": "Spock, rock","Spock": "lizard, paper","lizard": "rock, scissors"}`
