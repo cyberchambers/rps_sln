@@ -11,7 +11,7 @@ Specifically, this repo:
 - tracks game results using an in-memory db
 
 
-## 🤡 Send in the Clones 🤡
+## 🤡 Send in the Clones
 
 Want to try it?
 
@@ -26,6 +26,7 @@ The swagger UI is reletively self-explanitory. Nonetheless, here are some highli
 > - There is a key for every possible option of play (i.e. rock or paper or scissors)
 > - Each key holds values for victory conditions (i.e. "rock": "paper" or "scissors": "rock")
 > - Rules are adjusted by simply adjusting keys and values in the API's POST parameter {rules}
+> - There is no format checking, per say, but as a quick and dirty fix `ToLower()` is applied to strings when evaulated.
 
 If you want to play [Rock/Paper/Scissors/Spock/Lizard](http://www.samkass.com/theories/RPSSL.html) use the following rules:
 
